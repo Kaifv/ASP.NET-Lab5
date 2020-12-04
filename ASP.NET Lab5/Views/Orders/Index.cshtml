@@ -4,7 +4,8 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Main page for browsing through orders data<br /></h1>
+<p>You can also add the orders data in here, more over you can also add, update, delete and view the data </p>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -28,26 +29,27 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.dateOrderPlaced)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.dateOrderPaid)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.paymentMethod)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Customer.customerId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.orderID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.orderID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.orderID">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dateOrderPlaced)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dateOrderPaid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.paymentMethod)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer.customerId)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.orderID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.orderID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.orderID">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

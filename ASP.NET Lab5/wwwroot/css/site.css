@@ -1,5 +1,5 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿ /*Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. 
 
 a.navbar-brand {
     white-space: normal;
@@ -7,7 +7,7 @@ a.navbar-brand {
     word-break: break-all;
 }
 
-/* Provide sufficient contrast against white background */
+ Provide sufficient contrast against white background 
 a {
     color: #0366d6;
 }
@@ -24,8 +24,8 @@ a {
     border-color: #1861ac;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+ Sticky footer styles
+-------------------------------------------------- 
 html {
     font-size: 14px;
 }
@@ -53,15 +53,15 @@ button.accept-policy {
     line-height: inherit;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+ Sticky footer styles
+-------------------------------------------------- 
 html {
     position: relative;
     min-height: 100%;
 }
 
 body {
-    /* Margin bottom by footer height */
+     Margin bottom by footer height 
     margin-bottom: 60px;
     background-color: beige;
 }
@@ -71,7 +71,7 @@ body {
     bottom: 0;
     width: 100%;
     white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
+    line-height: 60px;  Vertically center the text there 
 }
 
 
@@ -82,7 +82,7 @@ body {
     bottom: 0;
     width: 100%;
     white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
+    line-height: 60px;  Vertically center the text there 
 }
 
 ul {
@@ -106,7 +106,7 @@ li {
     }
 
         li a:hover {
-            background-color: #111;
+            background-color: greenyellow;
         }
 
 input[type=text], select {
@@ -133,7 +133,7 @@ input[type=submit] {
     input[type=submit]:hover {
         background-color: #45a049;
     }
-
+*/
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -5306,9 +5306,9 @@ input[type="button"].btn-block {
         }
 }
 
-.accordion {
+/*.accordion {
     overflow-anchor: none;
-}
+}*/
 
     .accordion > .card {
         overflow: hidden;
