@@ -15,11 +15,10 @@ namespace ASP.NET_Lab5.Models
 
         }
 
+        //I am making database list for my framework here of my models
         public DbSet<Customer> Customers { get; set; }
+        //This is the database for my another model that is orders
         public DbSet<Order> Orders { get; set; }
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<Order>().HasForeignKey(p => p.CustomerFK);
-        //}
+        
     }
 }
